@@ -1,0 +1,99 @@
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Fira Code */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+body {
+  color: #efefef;
+  background-color: #1f1f22;
+  font-family: Inter, sans-serif;
+  font-size: 1.7rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #efefef;
+}
+
+#display {
+  background-color: #2f323b;
+  min-height: 50px;
+  padding: 7px;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  font-family: "Fira Code", "Cascadia Code", "Cascadia Mono", consolas,
+    monospace;
+
+  border-radius: 12px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 10px;
+}
+
+.numeric-buttons {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, 60px);
+  grid-auto-columns: calc(100% / 2);
+  grid-auto-rows: 60px;
+}
+
+.operator-buttons {
+  padding-top: 5px;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(2, 60px);
+  grid-auto-columns: calc(100% / 4);
+  grid-auto-rows: repeat(3, 60px);
+}
+
+.func-buttons {
+  padding-top: 5px;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(1, 60px);
+  grid-auto-columns: calc(100% / 4);
+  grid-auto-rows: 60px;
+}
+
+.btn {
+  margin: 2px;
+  flex-basis: 35px;
+  background-color: #2f323b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.btn.numeric.zero {
+  grid-column: span 2;
+}
+
+.btn.operator {
+  background-color: #37729a;
+  position: relative;
+}
+
+.btn.func {
+  background-color: #0099ff;
+}
+
+.btn:hover {
+  background-color: #454956;
+}

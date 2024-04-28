@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-eval'"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="display">0</div>
+    <div class="btn-container">
+      <div class="numeric-buttons">
+        <div class="btn numeric">1</div>
+        <div class="btn numeric">2</div>
+        <div class="btn numeric">3</div>
+        <div class="btn numeric">4</div>
+        <div class="btn numeric">5</div>
+        <div class="btn numeric">6</div>
+        <div class="btn numeric">7</div>
+        <div class="btn numeric">8</div>
+        <div class="btn numeric">9</div>
+        <div class="btn numeric zero">0</div>
+        <div class="btn numeric dot">.</div>
+      </div>
+      <div class="operator-buttons">
+        <div class="btn operator">+</div>
+        <div class="btn operator">-</div>
+        <div class="btn operator">*</div>
+        <div class="btn operator">/</div>
+        <div class="btn operator">**</div>
+        <div class="btn operator inverse">1/x</div>
+      </div>
+      <div class="func-buttons">
+        <div class="btn func clear">C</div>
+        <div class="btn func delete">Del</div>
+        <div class="btn func equal">=</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
