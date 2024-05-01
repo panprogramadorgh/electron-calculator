@@ -52,7 +52,11 @@ const funcButtons = document.querySelector(".func-buttons");
         isNaN(Number(display.innerHTML[display.innerHTML.length - 1]))
       )
         return;
-      const result = eval(display.innerHTML);
+      const rawResult = eval(display.innerHTML);
+      let result = rawResult;
+      if (result.toString().includes(".")) {
+        result = Number(result.toFixed(5));
+      }
       if (result.toString().length > 16) {
         display.innerHTML = "Error";
         return;
